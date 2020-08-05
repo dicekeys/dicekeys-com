@@ -1,0 +1,298 @@
+<svg 
+width="70.4mm" height="17.6mm" viewBox="0 0 70.4 17.6" style="background: rgba(0,0,0,0)" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
+</style>
+</defs>
+  <g transform="translate(0.8, 0.8)" id="gelementD1">
+  
+  <rect
+    id="boundary_rectangle_for_face_D1"
+    y="0"
+    x="0"
+    rx="3.2"
+    ry="3.2"
+    height="16"
+    width="16"
+    style="fill:#ffffff;stroke: rgba(128,128,128,0.5); border-radius: 3.2px;stroke-width:0.20;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
+  <rect
+    id="overline_rectangle_for_face_D1"
+    y="2"
+    x="2"
+    height="2.129032"
+    width="12"
+    style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;"/>
+  <rect
+    id="underline_rectangle_for_face_D1"
+    y="11.870968"
+    x="2"
+    height="2.129032"
+    width="12"
+    style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;;stroke-width:0;"/>
+  <rect
+      id="bit_code_for_D1_underline_0"
+      y="12.451613"
+      x="2.677419"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_D1_underline_4"
+      y="12.451613"
+      x="6.548387"
+      height="0.967742"
+      width="1.935484"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_D1_underline_7"
+      y="12.451613"
+      x="9.451613"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_D1_underline_9"
+      y="12.451613"
+      x="11.387097"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_D1_overline_0"
+      y="2.580645"
+      x="2.677419"
+      height="0.967742"
+      width="3.870968"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_D1_overline_8"
+      y="2.580645"
+      x="10.419355"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/>
+  <text
+  id="textfor_face_D1"
+  y="10.709677"
+  x="8"
+  style="font-family:Inconsolata;font-size:8.903226px;font-weight:700;letter-spacing:0.525px;text-anchor:middle;text-align:center;line-height:1;writing-mode:lr-tb;fill:#000000;fill-opacity:1;"
+  >
+  <tspan
+    id="tspan_for_face_D1"
+  >D1</tspan>
+</text>
+</g>
+
+  <g transform="translate(18.4, 0.8)" id="gelementC3">
+  
+  <rect
+    id="boundary_rectangle_for_face_C3"
+    y="0"
+    x="0"
+    rx="3.2"
+    ry="3.2"
+    height="16"
+    width="16"
+    style="fill:#ffffff;stroke: rgba(128,128,128,0.5); border-radius: 3.2px;stroke-width:0.20;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
+  <rect
+    id="overline_rectangle_for_face_C3"
+    y="2"
+    x="2"
+    height="2.129032"
+    width="12"
+    style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;"/>
+  <rect
+    id="underline_rectangle_for_face_C3"
+    y="11.870968"
+    x="2"
+    height="2.129032"
+    width="12"
+    style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;;stroke-width:0;"/>
+  <rect
+      id="bit_code_for_C3_underline_0"
+      y="12.451613"
+      x="2.677419"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_C3_underline_4"
+      y="12.451613"
+      x="6.548387"
+      height="0.967742"
+      width="1.935484"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_C3_underline_9"
+      y="12.451613"
+      x="11.387097"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_C3_overline_0"
+      y="2.580645"
+      x="2.677419"
+      height="0.967742"
+      width="3.870968"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_C3_overline_6"
+      y="2.580645"
+      x="8.483871"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_C3_overline_9"
+      y="2.580645"
+      x="11.387097"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/>
+  <text
+  id="textfor_face_C3"
+  y="10.709677"
+  x="8"
+  style="font-family:Inconsolata;font-size:8.903226px;font-weight:700;letter-spacing:0.525px;text-anchor:middle;text-align:center;line-height:1;writing-mode:lr-tb;fill:#000000;fill-opacity:1;"
+  >
+  <tspan
+    id="tspan_for_face_C3"
+  >C3</tspan>
+</text>
+</g>
+
+  <g transform="translate(36, 0.8)" id="gelementK3">
+  
+  <rect
+    id="boundary_rectangle_for_face_K3"
+    y="0"
+    x="0"
+    rx="3.2"
+    ry="3.2"
+    height="16"
+    width="16"
+    style="fill:#ffffff;stroke: rgba(128,128,128,0.5); border-radius: 3.2px;stroke-width:0.20;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
+  <rect
+    id="overline_rectangle_for_face_K3"
+    y="2"
+    x="2"
+    height="2.129032"
+    width="12"
+    style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;"/>
+  <rect
+    id="underline_rectangle_for_face_K3"
+    y="11.870968"
+    x="2"
+    height="2.129032"
+    width="12"
+    style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;;stroke-width:0;"/>
+  <rect
+      id="bit_code_for_K3_underline_0"
+      y="12.451613"
+      x="2.677419"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_K3_underline_3"
+      y="12.451613"
+      x="5.580645"
+      height="0.967742"
+      width="2.903226"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_K3_underline_8"
+      y="12.451613"
+      x="10.419355"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_K3_overline_0"
+      y="2.580645"
+      x="2.677419"
+      height="0.967742"
+      width="2.903226"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_K3_overline_9"
+      y="2.580645"
+      x="11.387097"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/>
+  <text
+  id="textfor_face_K3"
+  y="10.709677"
+  x="8"
+  style="font-family:Inconsolata;font-size:8.903226px;font-weight:700;letter-spacing:0.525px;text-anchor:middle;text-align:center;line-height:1;writing-mode:lr-tb;fill:#000000;fill-opacity:1;"
+  >
+  <tspan
+    id="tspan_for_face_K3"
+  >K3</tspan>
+</text>
+</g>
+
+  <g transform="translate(53.6, 0.8)" id="gelementY5">
+  
+  <rect
+    id="boundary_rectangle_for_face_Y5"
+    y="0"
+    x="0"
+    rx="3.2"
+    ry="3.2"
+    height="16"
+    width="16"
+    style="fill:#ffffff;stroke: rgba(128,128,128,0.5); border-radius: 3.2px;stroke-width:0.20;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
+  <rect
+    id="overline_rectangle_for_face_Y5"
+    y="2"
+    x="2"
+    height="2.129032"
+    width="12"
+    style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;"/>
+  <rect
+    id="underline_rectangle_for_face_Y5"
+    y="11.870968"
+    x="2"
+    height="2.129032"
+    width="12"
+    style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;;stroke-width:0;"/>
+  <rect
+      id="bit_code_for_Y5_underline_0"
+      y="12.451613"
+      x="2.677419"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_Y5_underline_2"
+      y="12.451613"
+      x="4.612903"
+      height="0.967742"
+      width="1.935484"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_Y5_underline_5"
+      y="12.451613"
+      x="7.516129"
+      height="0.967742"
+      width="0.967742"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_Y5_underline_7"
+      y="12.451613"
+      x="9.451613"
+      height="0.967742"
+      width="1.935484"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_Y5_overline_0"
+      y="2.580645"
+      x="2.677419"
+      height="0.967742"
+      width="1.935484"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/><rect
+      id="bit_code_for_Y5_overline_4"
+      y="2.580645"
+      x="6.548387"
+      height="0.967742"
+      width="4.83871"
+      style="fill:#ffffff;stroke:none;stroke-width:0;"/>
+  <text
+  id="textfor_face_Y5"
+  y="10.709677"
+  x="8"
+  style="font-family:Inconsolata;font-size:8.903226px;font-weight:700;letter-spacing:0.525px;text-anchor:middle;text-align:center;line-height:1;writing-mode:lr-tb;fill:#000000;fill-opacity:1;"
+  >
+  <tspan
+    id="tspan_for_face_Y5"
+  >Y5</tspan>
+</text>
+</g>
+
+</svg>
