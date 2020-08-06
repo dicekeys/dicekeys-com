@@ -1,6 +1,9 @@
 <html>
 	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
 		<title>DiceKeys</title>
+		<link rel="icon" href="favicon.svg">
 		<style>
 			body {
 				margin: 0px;
@@ -86,16 +89,23 @@
 				font-size: 1rem;
 			}
 			p.content {
+				display: block;
 				margin-block-start: 0.4em;
 				margin-block-end: 0.4em;
 			}
 			@font-face {
 				font-family: Inconsolata;
-				src: url(./fonts/inconsolata.woff2);
+				src: url("./fonts/Inconsolata-Bold.ttf");
+				font-weight: 700;
+			}
+			@font-face {
+				font-family: Inconsolata;
+				src: url("./fonts/Inconsolata-Regular.ttf");
+				font-weight: 400;
 			}
 			.dice-keys-font {
 				font-family: Inconsolata, monospace;
-				display: inline-block;
+				display: inline;
 			}
 			.use-case {
 				padding-top: 0.75vw;
@@ -158,21 +168,32 @@
 		</style>
 	</head>
 	<body>
-		<div class="header" style="z-index: 255;">
-			<div style="justify-content: flex-end; background-color: rgba(16, 16, 16, 1); align-items: flex-end; margin-right: -1%; flex-grow: 1; flex-shrink: 0;">
-				<div style="flex-direction: column; align-items: center;">
+		<div class="header" style="background-color: rgba(16, 16, 16, 0.9); z-index: 255;">
+			<div style="margin-right: -3vw; justify-content: flex-end; align-items: flex-end; flex-grow: 1; flex-shrink: 0;">
+				<div style="flex-direction: column; align-items: center;
+					padding-left: 2vw;
+					border-bottom-right-radius: 1vw;
+					border-bottom-left-radius: 1vw;
+				">
 					<div style="flex-direction: row;">
-						<img style="max-width: 4.25vw; margin-top: 0vw;" src="images/from-left.png"/>
+						<img style="max-width: 4.5vw; margin-top: 0vw;" src="images/from-left.png"/>
 						<div style="flex-direction: column;">
 							<div class="dice-keys-font" style="font-size: 4vw; font-weight: 700;">DiceKeys</div>
 							<div style="font-size: 1.5vw; margin-top: -0.25vw">
 								Security keys you create by rolling dice
 							</div>
-							</div>
 						</div>
+					</div>
 				</div>
 			</div>
-			<div style="flex-basis: 45%; object-fit: contain;">
+			<div style="flex-basis: 46vw; object-fit: contain;">
+				<!-- <img style="width: 45vw;" src="./images/throwing.png"/> -->
+			</div>
+		</div>
+		<div class="header" style="position: absolute; z-index: 512;">
+			<div style="justify-content: flex-end; align-items: flex-end; flex-grow: 1; flex-shrink: 0;">
+			</div>
+			<div style="flex-basis: 45vw; object-fit: contain;">
 				<img style="width: 45vw;" src="./images/throwing.png"/>
 			</div>
 		</div>
@@ -186,243 +207,262 @@
 			</div>
 		</div>
 		</div>
-		<div class="centering-column">
-			<div class="centered-main-column">
+		<div class="centering-column"><div class="centered-main-column">
 
-				<div style="
-					display: block;
-					font-size: 2.8vw;
-					padding-left: 1vw;
-					padding-right: 1vw;
-					margin-left: 1vw;
-					border-radius: 0.5vw;
-					text-align: center;
-					background-color: rgba(96, 96, 96, 0.6);
-					border-color: #A08080;
-					border-width: 0.1vw;
-					border-bottom-style: solid;
-					border-top-style: solid;
-					color:#fff8f8;
-				">
-					Don't let your own security lock&nbsp;<i>you</i>&nbsp;out
-				</div>
-				<div class="content" style="width: 55vw; font-size: 1.8vw; margin-top: 1.75vw; margin-bottom: 1.25vw;">
-						<span class="dice-keys-font">DiceKeys</span> are backup security keys that
-						prevent lockouts and make it easier to adopt stronger online security.
-				</div>
+			<div style="
+				display: block;
+				max-width: 50vw;
+				font-size: 2.8vw;
+				padding-left: 1vw;
+				padding-right: 1vw;
+				margin-left: 1vw;
+				border-radius: 0.5vw;
+				text-align: center;
+				background-color: rgba(96, 96, 96, 0.6);
+				border-color: #A08080;
+				border-width: 0.1vw;
+				border-bottom-style: solid;
+				border-top-style: solid;
+				color:#fff8f8;
+			">
+				Don't let your own security lock&nbsp;<i>you</i>&nbsp;out
+			</div>
+			<div class="content" style="width: 55vw; font-size: 1.8vw; margin-top: 1.75vw; margin-bottom: 1.25vw;">
+					<span class="dice-keys-font">DiceKeys</span> are backup security keys that
+					prevent lockouts and make it easier to adopt stronger online security.
+			</div>
 				
 
-				<!-- <div class="section-content" style="flex-direction: column; align-items: center; width: 55vw;"> -->
-					<div style="flex-direction: row; justify-items: center; align-items: flex-end;">
-						<div class="use-case" style="width: 20vw;">
-							<figure class="use-case-image">
-								<img style="max-width: 14vw;" src="./images/master-password-trans.png"/>
-								<figcaption class="use-case-description">
-									Use password managers without memorizing &lsquo;master&rsquo; passwords
-								</figcaption>
-							</figure>
-						</div>
-
-						<div class="use-case" style="width: 20vw; margin-left: 5vw">
-							<figure class="use-case-image">
-								<div style="flex-direction: row; justify-content: center; align-items: center; width:100%">
-									<img style="max-width: 4vw;" src="./images/solo.png"/>
-									<span style="font-size: 2vw; font-weight: 700;">&nbsp;=&nbsp;</span>
-									<img style="max-width: 4vw;" src="./images/solo.png"/>
-								</div>
-								<figcaption class="use-case-description">
-									Create FIDO security keys you can replicate if broken or lost
-								</figcaption>
-							</figure>
-						</div>
-					</div>
-
-					<div class="use-case">
-						<figure class="use-case-image">
-							<img style="max-width: 35vw; border-radius: 1vw;" src="./images/end-to-end.PNG"/>
-							<figcaption class="use-case-description">
-								Ensure ongoing access to the data in end-to-end encrypted apps
-							</figcaption>
-						</figure>
-					</div>
-				<!-- </div> -->
-
-				<!-- <div style="display: block; font-size: 2em; margin-top:1.5em; ">
-					<div class="dice-keys-font">DiceKeys</div> are Unique
-				</div> -->
-				<h1>
-					Uniquely reliable and trustworthy by design
-					<!-- <div class="dice-keys-font">DiceKeys</div> are Unique -->
-				</h1>
-
-				<div class="features-sections" style=" margin-left: 5vw; max-width: 75vw; flex-direction: column; justify-content: start; align-content: start;">
-
-					<div class="section">
-						<div class="section-heading">
-							Readable by your devices and your own eyes
-						</div>
-						<div class="section-content" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-							<div>
-								<img style="width: 20vw;" src="./images/sample-key.svg"/>
-							</div>
-							<div class="content" style="flex-direction: column; align-items: start; font-size: 1.9vw; margin-left: 2.5vw;">
-								<div class="content" style="display: block;">
-									<div>
-										<span class="dice-keys-font">DiceKeys</span>&nbsp;can be read by most any phone, tablet, or computer.<br/>
-									</div>
-									Or, you can use your own eyes to read each face by its:
-									<ul>
-										<li><i>letter</i>, which identifies the die</li>
-										<li><i>digit</i>, which identifies the face of the die, and</li>
-										<li><i>orientation</i> (rotation) of the face relative to the box</li>
-									</ul>
-								</div>
-								<div class="content">
-									The lines and dots are error-correction codes: extra copies of the letter and digit.
-									Our algorithms use them to triple check each letter and digit read, making automated
-									reading extraordinarily reliable.
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="section">
-						<div class="section-heading">
-							Open and tangible
-						</div>
-						<div class="section-content">
-							<div class="content">
-								Our open software for reading &nbsp;<span class="dice-keys-font">DiceKeys</span>&nbsp;
-								and performing cryptographic operations with them
-								is available for you to inspect, compile, modify, and use for eternity.
-							</div>
-							<div class="content">
-								In contrast to hardware designed to resist inspection,
-								you can inspect every aspect of &nbsp;<span class="dice-keys-font">DiceKeys</span>&nbsp;
-								with your own eyes.
-								Your security is literally in your own hands.
-							</div>
-						</div>
-					</div>
-
-					<div class="section">
-						<div class="section-heading">
-							Designed to last a human lifetime
-						</div>
-						<div class="section-content">
-							Most products are designed to be replaced,
-							and many technology products are designed to be replaced dozens of times over a human lifetime.
-							In contrast, one need only open up a decades-old game to observe the longevity of dice.
-						</div>
-					</div>
-					
-					<div class="section">
-						<div class="section-heading">
-							Future-proof
-						</div>
-						<div class="section-content">
-							In 50 years, our devices may no longer support Bluetooth or USB-C, but we will still have
-							eyes and our devices will still have cameras.
-							Even if the company behind <div class="dice-keys-font">DiceKeys</div> is long gone,
-							our license gives you access to use our software for eternity, and allows the open-source
-							community to maintain and improve it.
-						</div>
-					</div>
-
-				</div>
-
-				<h1>
-					Presentations and video demos
-				</h1>
-				<div class="section-content">
-					<figure style="max-width: 35vw;">
-						<img style="max-width: 100%; border: thin double #808080" src="images/video-preview.png"/>
-						<figcaption style="text-align: center;">
-							See how DiceKeys work in this lighting talk presented at the 2020
-							Symposium on Usable Privacy and Security (SOUPS)
+			<div style="flex-direction: row; justify-items: center; align-items: flex-end;">
+				<div class="use-case" style="width: 20vw;">
+					<figure class="use-case-image">
+						<img style="max-width: 14vw;" src="./images/master-password-trans.png"/>
+						<figcaption class="use-case-description">
+							Use password managers without memorizing &lsquo;master&rsquo; passwords
 						</figcaption>
 					</figure>
 				</div>
 
-				<h1>
-					Availability
-				</h1>
-				<div class="section-content">
-					<p>
-						Our first shipment of DiceKeys will be sold paired with a SoloKey,
-						so that you can seed the SoloKey from your DiceKey and replace the
-						SoloKey with a cryptographically-identical replica if you break or lose it.
-					</p>
-					<p>
-						Partners and developers and members of the press can contact us for test units,
-						which have completed manufacturing are en route to our distributor.
-					</p>
-				</div>
-
-
-				<h1>Team</h1>
-
-				<div class="content">
-					<!-- DiceKeys comes from public-interest security technologists with
-					at the forefront of user research and user advocacy. -->
-				</div>
-				<div class=section-content>
-					<div class="team-row">
-						<div class="team-member">
-							<div style="flex-direction: row;">
-								<img class="team-member-die" src="images/team/s5.svg"/>
-								<img class="team-member-face" src="images/team/stuart.png"/>
-							</div>						<div class="team-member-name">
-								Stuart Schechter
-								<a style="margin-left: 10px" href="https://www.linkedin.com/in/stuart-schechter/"><img style="height: 20px;" src="./images/social/linked-in.png"/></a>
-								<a style="margin-left: 5px;" href="https://twitter.com/uppajung/"><img style="height: 20px;" src="./images/social/Twitter_Social_Icon_Rounded_Square_Color.svg"/></a>
-							</div>
-							<div class="team-member-bio">
-								Stuart's career as an inventor and researcher in the field of usable security research spanned his years at Microsoft Research, MIT Lincoln Laboratory, and his PhD at Harvard University. He currently teaches Usable Privacy and Security for the University of California at Berkeley's Master's Program in Cybersecurity.
-							</div>
+				<div class="use-case" style="width: 20vw; margin-left: 5vw">
+					<figure class="use-case-image">
+						<div style="flex-direction: row; justify-content: center; align-items: center; width:100%">
+							<img style="max-width: 4vw;" src="./images/solo.png"/>
+							<span style="font-size: 2vw; font-weight: 700;">&nbsp;=&nbsp;</span>
+							<img style="max-width: 4vw;" src="./images/solo.png"/>
 						</div>
-						<div class="team-member">
-						</div>
+						<figcaption class="use-case-description">
+							Create FIDO security keys you can replicate if broken or lost
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<div class="use-case">
+				<figure class="use-case-image">
+					<img style="max-width: 35vw; border-radius: 1vw;" src="./images/end-to-end.png"/>
+					<figcaption class="use-case-description">
+						Ensure ongoing access to the data in end-to-end encrypted apps
+					</figcaption>
+				</figure>
+			</div>
+
+			<h1>
+				Reliable and trustworthy by design
+				<!-- <div class="dice-keys-font">DiceKeys</div> are Unique -->
+			</h1>
+
+			<div class="features-sections" style=" margin-left: 5vw; max-width: 75vw; flex-direction: column; justify-content: start; align-content: start;">
+
+				<div class="section">
+					<div class="section-heading">
+						Readable by your devices and your own eyes
 					</div>
-					<h3>Advisors</h3>
-					<div class="team-row">
-						<div class="team-member">
-							<div style="flex-direction: row;">
-								<img class="team-member-die" src="images/team/j8.svg"/>
-								<img class="team-member-face" src="images/team/bonneau.png"/>
-							</div>
-							<div class="team-member-name">
-								<a href="http://jbonneau.com/">Joseph Bonneau</a>
-								<a style="margin-left: 10px" href="https://www.linkedin.com/in/joseph-bonneau-15419920/"><img style="height: 20px;" src="./images/social/linked-in.png"/></a>
-								<a style="margin-left: 5px;" href="https://twitter.com/josephbonneau"><img style="height: 20px;" src="./images/social/Twitter_Social_Icon_Rounded_Square_Color.svg"/></a>									
-							</div>
-							<div class="team-member-bio">
-								Joseph Bonneau is an Assistant Professor at NYU and was formerly affiliated with Stanford, Princeton, Cambridge (PhD), the Electronic Frontier Foundation, Google, Yahoo, and Cryptography Research.
-								He is known for groundbreaking work on authentication, including analysis of 70m passwords at Yahoo, and for his security analyses of cryptocurrencies.
-								Of particular relevance for DiceKeys, he created the word lists for EFF's DiceWare, a technology to help users to create phrase-based passwords from standard dice.
-							</div>
+					<div class="section-content" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+						<div>
+							<img style="width: 20vw;" src="./images/sample-key.svg"/>
 						</div>
-						<div class="team-member">
-							<img class="team-member-die" src="images/team/b5.svg"/>
-							<div class="team-member-name">
-								<a href="https://www.schneier.com/">Bruce Schneier</a>
-								<a style="margin-left: 10px;" href="https://twitter.com/schneierblog"><img style="height: 20px;" src="./images/social/Twitter_Social_Icon_Rounded_Square_Color.svg"/></a>
+						<div class="content" style="flex-direction: column; align-items: start; font-size: 1.9vw; margin-left: 2.5vw;">
+							<div class="content">
+								<div class="content">
+									<span class="dice-keys-font">DiceKeys</span>&nbsp;can be read by most any phone, tablet, or computer.<br/>
+								</div>
+								<div class="content">
+									Or, you can use your own eyes to read each face by its:
+								</div>
+								<ul>
+									<li><i>letter</i>, which identifies the die</li>
+									<li><i>digit</i>, which identifies the face of the die, and</li>
+									<li><i>orientation</i> (rotation) of the face relative to the box</li>
+								</ul>
 							</div>
-							<div class="team-member-bio">
-								Bruce Schneier is an internationally renowned security technologist, called a "security guru" by The Economist. He is the author of over one dozen books--including his latest, Click Here to Kill Everybody--as well as hundreds of articles, essays, and academic papers. His influential newsletter "Crypto-Gram" and his blog "Schneier on Security" are read by over 250,000 people. He has testified before Congress, is a frequent guest on television and radio, has served on several government committees, and is regularly quoted in the press. Schneier is a fellow at the Berkman Klein Center for Internet & Society at Harvard University; a Lecturer in Public Policy at the Harvard Kennedy School; a board member of the Electronic Frontier Foundation, AccessNow, and the Tor Project; and an Advisory Board Member of the Electronic Privacy Information Center and VerifiedVoting.org.
+							<div class="content">
+								The lines and dots are error-correction codes: extra copies of the letter and digit.
+								Our algorithms use them to triple check each letter and digit read, making automated
+								reading extraordinarily reliable.
 							</div>
 						</div>
 					</div>
 				</div>
-			
-				<h1>Technical specs</h1>
-				<div class="section-content">
-					<div style="flex-direction: row; justify-content: space-between; align-items: center;">
-						<img style="max-width: 25%;" src="images/from-left.png"/>
 
-					<div style="display: block; width: 45vw;">
-						<div style="display: block;">
-							<span style="font-size: 2.2vw; font-weight: bold;">Security strength</span>&nbsp; (for&nbsp;<div class="dice-keys-font">DiceKeys</div>&nbsp;in raw form)
+				<div class="section">
+					<div class="section-heading">
+						Open and tangible
+					</div>
+					<div class="section-content">
+						<div class="content">
+							Our open software for reading &nbsp;<span class="dice-keys-font">DiceKeys</span>&nbsp;
+							and performing cryptographic operations with them
+							is available for you to inspect, compile, modify, and use for eternity.
+						</div>
+						<div class="content">
+							In contrast to hardware designed to resist inspection,
+							you can inspect every aspect of &nbsp;<span class="dice-keys-font">DiceKeys</span>&nbsp;
+							with your own eyes.
+							Your security is literally in your own hands.
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="section-heading">
+						Designed to last a human lifetime
+					</div>
+					<div class="section-content">
+						Most products are designed to be replaced,
+						and many technology products are designed to be replaced dozens of times over a human lifetime.
+						In contrast, one need only open up a decades-old game to observe the longevity of dice.
+					</div>
+				</div>
+				
+				<div class="section">
+					<div class="section-heading">
+						Future-proof
+					</div>
+					<div class="section-content">
+						In 50 years, our devices may no longer support Bluetooth or USB-C, but we will still have
+						eyes and our devices will still have cameras.
+						Even if the company behind <div class="dice-keys-font">DiceKeys</div> is long gone,
+						our license gives you access to use our software for eternity, and allows the open-source
+						community to maintain and improve it.
+					</div>
+				</div>
+
+			</div>
+
+			<h1>
+				Presentations and video demos
+			</h1>
+			<div class="section-content">
+				<figure style="max-width: 35vw;">
+					<img style="max-width: 100%; border: thin double #808080" src="images/video-preview.png"/>
+					<figcaption style="text-align: center;">
+						See how DiceKeys work in this lighting talk presented at the 2020
+						Symposium on Usable Privacy and Security (SOUPS)
+					</figcaption>
+				</figure>
+			</div>
+
+			<h1>
+				Hardware availability
+			</h1>
+			<div class="section-content">
+				<p>
+					Our first shipment of DiceKeys will be sold paired with a
+					<a href="https://solokeys.com">SoloKey <img style="max-width: 1.5rem;" src="images/solo.png"></a>,
+					so that you can seed the <a href="https://solokeys.com">SoloKey</a> from your DiceKey and replace the
+					<a href="https://solokeys.com">SoloKey</a> with a cryptographically-identical replica if you break or lose it.
+				</p>			
+				<p>
+					Partners and developers and members of the press can contact us for test units,
+					which have completed manufacturing are en route to our distributor.
+				</p>
+			</div>
+
+			<h1>Software</h1>
+			<div class="section-content">
+				<p>
+					Use the&nbsp;<span&nbsp;class="dice-keys-font">DiceKeys</span> app
+					(<a target="app" href="https://dicekeys.app">https://dicekeys.app</a>) to read your
+					&nbsp;<span class="dice-keys-font">DiceKey</span>.
+					Our API allows apps and services to derive their own private secrets from your
+					&nbsp;<span class="dice-keys-font">DiceKey</span>&nbsp;without
+					seeing the key itself.
+				</p>
+				<p>
+					Our reference implementation runs in most modern web browsers, allowing it to
+					work on an incredibly diverse range of devices.
+					While built with web-based technologies (TypeScript &amp; WebAssembly), it runs
+					entirely locally on your device.
+				</p><p>
+					We are also developing Android and iOS versions to provide a richer experience
+					on those devices.
+				</p>
+			</div>
+
+
+			<h1>Team</h1>
+
+			<div class="content">
+				<!-- DiceKeys comes from public-interest security technologists with
+				at the forefront of user research and user advocacy. -->
+			</div>
+			<div class=section-content>
+				<div class="team-row">
+					<div class="team-member">
+						<div style="flex-direction: row;">
+							<img class="team-member-die" src="images/team/S5.svg"/>
+							<img class="team-member-face" src="images/team/stuart.png"/>
+						</div>						<div class="team-member-name">
+							Stuart Schechter
+							<a style="margin-left: 10px" href="https://www.linkedin.com/in/stuart-schechter/"><img style="height: 20px;" src="./images/social/linked-in.png"/></a>
+							<a style="margin-left: 5px;" href="https://twitter.com/uppajung/"><img style="height: 20px;" src="./images/social/Twitter_Social_Icon_Rounded_Square_Color.svg"/></a>
+						</div>
+						<div class="team-member-bio">
+							Stuart's career as an inventor and researcher in the field of usable security research spanned his years at Microsoft Research, MIT Lincoln Laboratory, and his PhD at Harvard University. He currently teaches Usable Privacy and Security for the University of California at Berkeley's Master's Program in Cybersecurity.
+						</div>
+					</div>
+					<div class="team-member">
+					</div>
+				</div>
+				<h3>Advisors</h3>
+				<div class="team-row">
+					<div class="team-member">
+						<div style="flex-direction: row;">
+							<img class="team-member-die" src="images/team/J8.svg"/>
+							<img class="team-member-face" src="images/team/bonneau.png"/>
+						</div>
+						<div class="team-member-name">
+							<a href="http://jbonneau.com/">Joseph Bonneau</a>
+							<a style="margin-left: 10px" href="https://www.linkedin.com/in/joseph-bonneau-15419920/"><img style="height: 20px;" src="./images/social/linked-in.png"/></a>
+							<a style="margin-left: 5px;" href="https://twitter.com/josephbonneau"><img style="height: 20px;" src="./images/social/Twitter_Social_Icon_Rounded_Square_Color.svg"/></a>									
+						</div>
+						<div class="team-member-bio">
+							Joseph Bonneau is an Assistant Professor at NYU and was formerly affiliated with Stanford, Princeton, Cambridge (PhD), the Electronic Frontier Foundation, Google, Yahoo, and Cryptography Research.
+							He is known for groundbreaking work on authentication, including analysis of 70m passwords at Yahoo, and for his security analyses of cryptocurrencies.
+							Of particular relevance for DiceKeys, he created the word lists for EFF's DiceWare, a technology to help users to create phrase-based passwords from standard dice.
+						</div>
+					</div>
+					<div class="team-member">
+						<img class="team-member-die" src="images/team/B5.svg"/>
+						<div class="team-member-name">
+							<a href="https://www.schneier.com/">Bruce Schneier</a>
+							<a style="margin-left: 10px;" href="https://twitter.com/schneierblog"><img style="height: 20px;" src="./images/social/Twitter_Social_Icon_Rounded_Square_Color.svg"/></a>
+						</div>
+						<div class="team-member-bio">
+							Bruce Schneier is an internationally renowned security technologist, called a "security guru" by The Economist. He is the author of over one dozen books--including his latest, Click Here to Kill Everybody--as well as hundreds of articles, essays, and academic papers. His influential newsletter "Crypto-Gram" and his blog "Schneier on Security" are read by over 250,000 people. He has testified before Congress, is a frequent guest on television and radio, has served on several government committees, and is regularly quoted in the press. Schneier is a fellow at the Berkman Klein Center for Internet & Society at Harvard University; a Lecturer in Public Policy at the Harvard Kennedy School; a board member of the Electronic Frontier Foundation, AccessNow, and the Tor Project; and an Advisory Board Member of the Electronic Privacy Information Center and VerifiedVoting.org.
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<h1>Technical specs</h1>
+			<div class="section-content">
+				<div style="flex-direction: row; justify-content: space-between; align-items: center;">
+					<img style="max-width: 25%;" src="images/from-left.png"/>
+
+					<div class="content" style="width: 45vw;">
+						<div class="content">
+							<span style="font-size: 2.2vw; font-weight: bold;">Security strength</span>
 						</div>
 						<div style="font-size:1.8vw; margin-left: 4vw; justify-self: flex-end; flex-direction: column; justify-content: start; align-items: stretch; justify-content: stretch;">
 							<div style="flex-direction: column; align-items: stretch; justify-items: stretch; align-content: stretch;">
@@ -438,32 +478,32 @@
 									<div style="font-style: italic;">4 possible orientations of each exposed face</div>
 									<div>&times; 4<sup>25</sup></div>
 								</div>
+								<div style="flex-direction: row; justify-content: space-between; align-items: baseline; width: inherit;">
+									<div style="font-style: italic;">4 possible orientations of box reduced to one* </div>
+									<div>/ 4<sup>1</sup></div>
+								</div>
 							</div>
 							<div style="text-align: right; justify-content: flex-end;; border-top: white 1px solid; font-size: 1.15vw">
-								=496,508,538,648,719,564,809,316,402,287,439,226,010,265,627,463,254,016,000,000
+								=124,127,134,662,179,891,202,329,100,571,859,806,502,566,406,865,813,504,000,000
 							</div>
 							<div style="flex-direction: row; align-self: flex-end;">
-								=2<sup style="font-size: 1.25vw;">198 + &epsilon;</sup>
+								=2<sup style="font-size: 1.25vw;">196 + &epsilon;</sup>
 							</div>
 							<div style="flex-direction: row; align-self: flex-end;">
-								>198 bits of security
+								<span style="font-size: 2.0vw; font-weight: bold;">&gt;196 bits</span>
 							</div>
 						</div>
 						<p>
-							In practice, <span class="dice-keys-font">DiceKeys</span> have 196 bits of security.
-							Before deriving cryptographic secrets, the software must first canonicalize the orientation
-							of your <span class="dice-keys-font">DiceKey</span> so that it will work regardless of the
-							orientation at which it's scanned.
-							This important step reduces the space of possible keys by a factor of four,
-							yielding a reduction in bit strength from 198 to 196 bits.
+							*To ensure your <span class="dice-keys-font">DiceKey</span> work correctly even if
+							scanned sideways or rotated up-side down, 
+							our software rotates it to a canonical orientation before deriving secrets. 
 						</p>
 					</div>
 				</div>
-
 				<h3>Physical Properties (edition 2020.0)</h3>
-				<div>Die size: 12mm</div>
-				<div>Mass (25 dice, 3-part box, and bag): &approx;103 grams</div>
+				<div class="content">Die size: 12mm</div>
+				<div class="content">Mass (25 dice, 3-part box, and bag): &approx;103 grams</div>
 			</div>
-		</div>
+		</div></div>
 	</body>
 </html>
