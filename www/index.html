@@ -85,6 +85,9 @@
 				display: block;
 				font-size: 1.2rem;
 			}
+			.content-note {
+				font-size: 1.0rem;
+			}
 			.team-member-bio {
 				font-size: 1rem;
 			}
@@ -176,7 +179,9 @@
 					border-bottom-left-radius: 1vw;
 				">
 					<div style="flex-direction: row;">
-						<img style="max-width: 4.5vw; margin-top: 0vw;" src="images/from-left.png"/>
+					<!-- safari doesn't auto-scale height from width, so... 
+						 throwing.png = 1024x1587, so height = width * 1.5498046875, 45vw width => 49.86vw height -->
+					 <img style="width: 4.5vw; height: 6.974vw; margin-top: 0vw;" src="images/from-left.png"/>
 						<div style="flex-direction: column;">
 							<div class="dice-keys-font" style="font-size: 4vw; font-weight: 700;">DiceKeys</div>
 							<div style="font-size: 1.5vw; margin-top: -0.25vw">
@@ -187,14 +192,15 @@
 				</div>
 			</div>
 			<div style="flex-basis: 46vw; object-fit: contain;">
-				<!-- <img style="width: 45vw;" src="./images/throwing.png"/> -->
 			</div>
 		</div>
 		<div class="header" style="position: absolute; z-index: 512;">
 			<div style="justify-content: flex-end; align-items: flex-end; flex-grow: 1; flex-shrink: 0;">
 			</div>
 			<div style="flex-basis: 45vw; object-fit: contain;">
-				<img style="width: 45vw;" src="./images/throwing.png"/>
+				<!-- safari doesn't auto-scale height from width, so... 
+					 throwing.png = 1229x1470, so height = width * 1.1081632, 45vw width => 49.86vw height -->
+				<img style="width: 45vw; height: 49.86vw;" src="./images/throwing.png"/>
 			</div>
 		</div>
 		<div class="footer">
@@ -227,7 +233,8 @@
 			">
 				Don't let your own security lock&nbsp;<i>you</i>&nbsp;out
 			</div>
-			<div class="content" style="width: 55vw; font-size: 1.8vw; margin-top: 1.75vw; margin-bottom: 1.25vw;">
+			<div class="content" style="width: 45vw; font-size: 1.8vw; margin-top: 1.75vw; margin-bottom: 1.25vw; margin-left: 2vw;
+				">
 					<span class="dice-keys-font">DiceKeys</span> are backup security keys that
 					prevent lockouts and make it easier to adopt stronger online security.
 			</div>
@@ -279,7 +286,7 @@
 					</div>
 					<div class="section-content" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
 						<div>
-							<img style="width: 20vw;" src="./images/sample-key.svg"/>
+							<img style="width: 20vw; height: 20vw; object-fit: contain;" src="./images/sample-key.svg" />
 						</div>
 						<div class="content" style="flex-direction: column; align-items: start; font-size: 1.9vw; margin-left: 2.5vw;">
 							<div class="content">
@@ -493,7 +500,7 @@
 								<span style="font-size: 2.0vw; font-weight: bold;">&gt;196 bits</span>
 							</div>
 						</div>
-						<p>
+						<p class="content-note">
 							*To ensure your <span class="dice-keys-font">DiceKey</span> work correctly even if
 							scanned sideways or rotated up-side down, 
 							our software rotates it to a canonical orientation before deriving secrets. 
