@@ -20,7 +20,7 @@
 				font-size: x-small;
 			}
 			a {
-				color: rgba(240,240,255,1);
+				color: rgba(216,216,255,1);
 				text-decoration: none;
 			}
 			h1, h2 {
@@ -302,10 +302,10 @@
 									<li><i>orientation</i> (rotation) of the face relative to the box</li>
 								</ul>
 							</div>
-							<div class="content">
-								The lines and dots are error-correction codes: extra copies of the letter and digit.
-								Our algorithms use them to triple check each letter and digit read, making automated
-								reading extraordinarily reliable.
+							<div class="content-note">
+								The lines and dots are error-correction codes.
+								Each line contains a redundant encoding of the letter and digit on the face of the die.
+								Our algorithms use them to orient and double check the letter and digit.
 							</div>
 						</div>
 					</div>
@@ -360,13 +360,15 @@
 				Presentations and video demos
 			</h1>
 			<div class="section-content">
+				<a href="https://www.usenix.org/conference/soups2020/presentation/schechter">
 				<figure style="max-width: 35vw;">
 					<img style="max-width: 100%; border: thin double #808080" src="images/video-preview.png"/>
-					<figcaption style="text-align: center;">
+					<figcaption style="text-align: center; color: white;">
 						See how DiceKeys work in this lighting talk presented at the 2020
 						Symposium on Usable Privacy and Security (SOUPS)
 					</figcaption>
 				</figure>
+				</a>
 			</div>
 
 			<h1>
@@ -374,14 +376,16 @@
 			</h1>
 			<div class="section-content">
 				<p>
-					Our first shipment of DiceKeys will be sold paired with a
+					Our first shipment of DiceKeys will be available from
+						<a href="https://www.crowdsupply.com/dicekeys/dicekeys">CrowdSupply</a> paired with a
 					<a href="https://solokeys.com">SoloKey <img style="max-width: 1.5rem;" src="images/solo.png"></a>,
 					so that you can seed the <a href="https://solokeys.com">SoloKey</a> from your DiceKey and replace the
 					<a href="https://solokeys.com">SoloKey</a> with a cryptographically-identical replica if you break or lose it.
 				</p>			
 				<p>
-					Partners and developers and members of the press can contact us for test units,
-					which have completed manufacturing are en route to our distributor.
+					Partners, developers, and members of the press can
+					<a href="mailto: high-rollers@dicekeys.com">contact us</a>
+					for test units, which have completed manufacturing are en route to our distributor.
 				</p>
 			</div>
 
@@ -501,9 +505,10 @@
 							</div>
 						</div>
 						<p class="content-note">
-							*To ensure your <span class="dice-keys-font">DiceKey</span> work correctly even if
-							scanned sideways or rotated up-side down, 
-							our software rotates it to a canonical orientation before deriving secrets. 
+							*To generate secrets consistently even if you scan your
+							<span class="dice-keys-font">DiceKey</span> sideways or rotated up-side down, 
+							our software rotates your <span class="dice-keys-font">DiceKey</span> to a
+							canonical orientation before deriving secrets from it. 
 						</p>
 					</div>
 				</div>
