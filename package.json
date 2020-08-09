@@ -4,7 +4,9 @@
   "description": "The dicekeys.com website",
   "main": "index.html",
   "scripts": {
-    "upload": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://preview.dicekeys.com/"
+    "upload-staging": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://staging.dicekeys.com/",
+    "upload-preview": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://preview.dicekeys.com/",
+    "upload-public": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://dicekeys.com/"
   },
   "repository": {
     "type": "git",
