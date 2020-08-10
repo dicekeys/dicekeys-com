@@ -2,7 +2,11 @@
 width="16mm" height="16mm" viewBox="0 0 16 16" style="background: none" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <style>
-    @import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
+    @font-face {
+      font-family: "Inconsolata";
+      src: url("../../fonts/Inconsolata-Bold.ttf");
+      font-weight: 700;
+    }
 </style>
 </defs>
   <g transform="translate(0, 0)" id="gelementS5">
@@ -83,7 +87,7 @@ width="16mm" height="16mm" viewBox="0 0 16 16" style="background: none" xmlns="h
   id="textfor_face_S5"
   y="10.709677"
   x="8"
-  style="font-family:Inconsolata;font-size:8.903226px;font-weight:700;letter-spacing:0.525px;text-anchor:middle;text-align:center;line-height:1;writing-mode:lr-tb;fill:#000000;fill-opacity:1;"
+  style="font-family: Inconsolata, monospace;font-size:8.903226px;font-weight:700;letter-spacing:0.525px;text-anchor:middle;text-align:center;line-height:1;writing-mode:lr-tb;fill:#000000;fill-opacity:1;"
   >
   <tspan
     id="tspan_for_face_S5"
