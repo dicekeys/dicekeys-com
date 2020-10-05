@@ -4,7 +4,7 @@ width="16mm" height="16mm" viewBox="0 0 16 16" style="background: none" xmlns="h
 <style>
     @font-face {
       font-family: "Inconsolata";
-      src: url("../../fonts/Inconsolata-Bold.ttf");
+      src: url("/assets/fonts/Inconsolata-Bold.ttf");
       font-weight: 700;
     }
 </style>
