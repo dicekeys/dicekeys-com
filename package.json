@@ -2,8 +2,9 @@
   "name": "dicekeys-com",
   "version": "1.0.0",
   "description": "The dicekeys.com website",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
+    "start": "npx @11ty/eleventy --serve",
     "upload-staging": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://staging.dicekeys.com/",
     "upload-preview": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://preview.dicekeys.com/",
     "upload-public": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://dicekeys.com/"
@@ -12,10 +13,16 @@
     "type": "git",
     "url": "git+https://github.com/dicekeys/dicekeys-com.git"
   },
-  "author": "",
+  "author": "DiceKeys",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dicekeys/dicekeys-com/issues"
   },
-  "homepage": "https://github.com/dicekeys/dicekeys-com#readme"
+  "homepage": "https://github.com/dicekeys/dicekeys-com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-sass": "^1.1.1"
+  }
 }
