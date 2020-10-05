@@ -1,0 +1,11 @@
+{
+  "title": "DiceKeys",
+  "description": "Security keys you create by rolling dice",
+  "url": "https://dicekeys.com/",
+  "baseurl": "",
+  "repo": "https://github.com/dicekeys/dicekeys-com.git",
+  "author": {
+    "name": "DiceKeys"
+  },
+  "og_locale": "en_US"
+}
