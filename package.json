@@ -13,8 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/dicekeys/dicekeys-com.git"
   },
-  "author": "DiceKeys",
-  "license": "ISC",
+  "author": "DiceKeys, LLC",
   "bugs": {
     "url": "https://github.com/dicekeys/dicekeys-com/issues"
   },
