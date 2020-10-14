@@ -6,20 +6,27 @@
     {% endif %}
 {% endcapture %}
 
+{% capture img %}
+    {% if page.img %}
+        {{ page.img }}
+    {% else %}
+        {{ site.metaImage }}
+    {% endif %}
+{% endcapture %}
+
 <!-- HEAD -->
 <head>
     <title>{{ title }}</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-    <link rel="icon" href="/assets/favicon.svg">
+    <link rel="icon" href="/assets/favicons/favicon.svg">
 
     <meta content="{{ site.title }}" property="og:site_name" />
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="{{ site.twitter }}" />
-    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:title" content="{{ title }}" />
     <meta name="twitter:description" content="{{ site.description }}" />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content="{{ img }}" />
 
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
@@ -28,171 +35,5 @@
 
 
     <!-- CSS -->
-    <link href="index.css" rel="stylesheet">
-      <style>
-        body {
-            margin: 0px;
-            background-color:#101010;
-        }
-        div {
-            display: flex;
-            color: white;
-        }
-        /* span {
-            display: inline-flex;
-        } */
-        sup {
-            font-size: x-small;
-        }
-        a {
-            color: rgba(216,216,255,1);
-            text-decoration: none;
-        }
-        h1, h2 {
-            margin-bottom: 0.5rem;
-        }
-        .team-row {
-            flex-direction: row;
-        }
-        .team-member {
-            margin-top: 10px;
-            flex-basis: 50%;
-            padding-right: 5%;
-            flex-direction: column; justify-content: start; align-items: start;
-        }
-        .team-member-face, .team-member-die {
-            height: 80px;
-            border: none;
-        }
-        .team-member-face {
-            border-radius: 20%;
-            margin-left:5px;
-            background-color: white;
-        }
-        .team-member-name {
-            font-size: 1.8rem;
-            flex-direction: row; justify-content: start; align-items: center;
-        }
-        .team-member-bio {
-            font-size: 1.35rem;
-        }
-        .header, .footer {
-            position: fixed;
-            left: 0;
-            flex-direction: row;
-            width: 100%;
-            justify-content: center;
-        }
-        .header {
-            top: 0;
-            align-items: start;
-        }
-        .footer {
-            bottom: 0;
-            align-items: end;
-            z-index: -1;
-        }
-        .centering-column {
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            margin-top: 10vw;
-            margin-bottom: 5vh;
-            margin-left: 5vw;
-            margin-right: 5vw;				
-            z-index: 0;
-            display: flex;
-            color: white;
-        }
-        .centered-main-column {
-            flex-direction: column;
-            justify-content: start;
-            align-items: start;
-        }
-        div.content, p.content, li.content, .section-content {
-            display: block;
-            font-size: 1.4rem;
-        }
-        .content-note {
-            font-size: 1.1rem;
-        }
-        p.content {
-            display: block;
-            margin-block-start: 0.4em;
-            margin-block-end: 0.4em;
-        }
-        @font-face {
-            font-family: Inconsolata;
-            src: url("./assets/fonts/Inconsolata-Bold.ttf");
-            font-weight: 700;
-        }
-        @font-face {
-            font-family: Inconsolata;
-            src: url("./assets/fonts/Inconsolata-Regular.ttf");
-            font-weight: 400;
-        }
-        .dice-keys-font {
-            font-family: Inconsolata, monospace;
-            display: inline;
-        }
-        .use-case {
-            padding-top: 0.75vw;
-            padding-bottom: 0.75vw;
-            padding-left: 1vw;
-            padding-right: 1vw;
-            width: 47vw;
-            margin-top: 1.75vh;
-            margin-bottom: 1vh;
-            border-radius: 1vw;
-            justify-content: start;
-            align-items: center;
-        }
-        figcaption {
-            justify-content: center;
-            font-size: 1.1rem;
-            caption-side: bottom;
-            text-align: center;
-        }
-        figure {
-            display: flex;
-            flex-direction: column;				
-            align-items: center;
-            margin-top: 0.3vh;
-            margin-bottom: 0vh;
-            width: 100%;
-            margin-inline-start: 5px;
-        margin-inline-end: 5px;
-        }
-        .use-case-image {
-            display: flex;
-            flex-direction: column;				
-            align-items: center;
-            margin-top: 0.3vh;
-            margin-bottom: 0vh;
-            width: 100%;
-            margin-inline-start: 5px;
-        margin-inline-end: 5px;
-        }
-        .section {
-            flex-direction: column;
-            justify-content: stretch;
-            justify-items: flex-start;
-            align-items: flex-start;
-            margin-top: 0.5rem;
-        }
-        .section-heading {
-            display: block;
-            margin-top: 0.5rem;
-            font-size: 1.5em;
-        }
-        .section-content {
-            margin-top: 1.0rem;
-            margin-left: 3vw;
-            flex-direction: column;
-            justify-content: flex-start;
-            max-width: 80vw;
-        }
-    </style>    
+    <link href="/assets/styles/index.css" rel="stylesheet">
 </head>
-
-{{ site.title | escape }}
