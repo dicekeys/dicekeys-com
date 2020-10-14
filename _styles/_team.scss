@@ -5,7 +5,7 @@
 }
 
 .team-member {
-  margin-top: 10px;
+  margin-top: 4vh;
   display: flex;
   flex-basis: 50%;
   padding-right: 5%;
@@ -37,6 +37,7 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  margin: 2vh 0;
 }
 
 .team-member-bio {

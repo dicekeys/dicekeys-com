@@ -1,17 +1,6 @@
 body {
   background-color: var(--color-black);
 }
-sup {
-  font-size: x-small;
-}
-a {
-  color: var(--color-lavendar);
-  text-decoration: none;
-}
-h1,
-h2 {
-  margin-bottom: 0.5rem;
-}
 
 .header,
 .footer {
@@ -51,6 +40,7 @@ p.content {
 .dice-keys-font {
   font-family: Inconsolata, monospace;
   display: inline;
+  font-weight: 700;
 }
 .use-case {
   padding-top: 0.75vw;
@@ -102,7 +92,8 @@ figure {
 }
 .section-content {
   margin-top: 1rem;
-  margin-left: 3vw;
+  margin-bottom: 3rem;
+  margin-left: 1vw;
   flex-direction: column;
   justify-content: flex-start;
   max-width: 80vw;
@@ -110,11 +101,19 @@ figure {
 
 .link-button {
   background-color: var(--color-blue);
+  color: var(--color-white);
   padding: 16px;
   display: inline-block;
   font-weight: bold;
 
   &:hover {
     background-color: #404ef3;
+  }
+}
+
+ul {
+  margin: 2vh 2vw;
+  li::before {
+    content: '→ ';
   }
 }
