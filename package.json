@@ -4,7 +4,10 @@
   "description": "The dicekeys.com website",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
+    "clean": "rm -rf _site",
+    "start": "run-p start:sass start:elevnty",
+    "start:sass": "sass _styles/index.scss _site/assets/styles/index.css --watch",
+    "start:elevnty": "npm run clean && npx @11ty/eleventy --serve",
     "upload-staging": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://staging.dicekeys.com/",
     "upload-preview": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://preview.dicekeys.com/",
     "upload-public": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://dicekeys.com/"
@@ -20,9 +23,11 @@
   },
   "homepage": "https://github.com/dicekeys/dicekeys-com#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
-  },
-  "dependencies": {
-    "eleventy-plugin-sass": "^1.1.1"
+    "@11ty/eleventy": "^0.11.0",
+    "dotenv": "^8.2.0",
+    "fibers": "^5.0.0",
+    "fs-extra": "^9.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.26.11"
   }
 }

@@ -1,23 +1,19 @@
-// const pluginSass = require('eleventy-plugin-sass');
-
-// const sassPluginOptions = {
-//   watch: ['./_styles/*.{scss,sass}', '!node_modules/**'],
-// };
-
 module.exports = function (eleventyConfig) {
-  // Plugins
-  // eleventyConfig.addPlugin(pluginSass, sassPluginOptions);
-
   // Layouts
-  eleventyConfig.addLayoutAlias('default', 'layouts/default.html');
+  eleventyConfig.addWatchTarget('_styles/');
 
   // Copy assets to _site dir
-  eleventyConfig.addPassthroughCopy('assets');
+  eleventyConfig.addPassthroughCopy('assets/fonts');
+  eleventyConfig.addPassthroughCopy('assets/images');
+  eleventyConfig.addPassthroughCopy('assets/videos');
+  eleventyConfig.addPassthroughCopy('assets/favicons');
 
+  eleventyConfig.addLayoutAlias('default', 'layouts/default.html');
   return {
     dir: {
       input: './',
       output: './_site',
     },
+    passthroughFileCopy: true,
   };
 };
