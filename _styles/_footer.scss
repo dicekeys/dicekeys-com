@@ -1,0 +1,17 @@
+.footer {
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 4px 16px;
+  box-sizing: border-box;
+
+  .copyright-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

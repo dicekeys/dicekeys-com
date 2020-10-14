@@ -1,0 +1,44 @@
+.team-row {
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.team-member {
+  margin-top: 10px;
+  display: flex;
+  flex-basis: 50%;
+  padding-right: 5%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.team-image-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-member-face,
+.team-member-die {
+  height: 80px;
+  border: none;
+}
+
+.team-member-face {
+  border-radius: 20%;
+  margin-left: 5px;
+  background-color: var(--color-white);
+}
+
+.team-member-name {
+  display: flex;
+  font-size: 1.8rem;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.team-member-bio {
+  font-size: 1.35rem;
+}

@@ -1,0 +1,31 @@
+:root {
+  // Colors
+  --color-black: #101010;
+  --color-white: #fff;
+  --color-blue: #4040e0;
+  --color-lavendar: rgba(216, 216, 255, 1);
+
+  // spacing
+  --size-base: 4px;
+  --size-8: 8px;
+  --size-12: 12px;
+  --size-14: 14px;
+  --size-16: 16px;
+  --size-24: 24px;
+  --size-32: 32px;
+  --size-64: 64px;
+  --size-128: 128px;
+  --size-256: 256px;
+  --size-512: 512px;
+  --size-1028: 1028px;
+
+  // Typography
+  --font-title: 'Inconsolata', 'Courier New', Courier, monospace;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 16px;
+}
+
+$breakpoint-tablet: 768px !default;
+$breakpoint-desktop: 1080px !default;
+$breakpoint-widescreen: 1440px !default;
