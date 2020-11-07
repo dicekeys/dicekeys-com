@@ -1,0 +1,119 @@
+body {
+  background-color: var(--color-black);
+}
+
+.header,
+.footer {
+  position: fixed;
+  left: 0;
+  flex-direction: row;
+  width: 100%;
+}
+.header {
+  top: 0;
+  align-items: start;
+}
+
+div.content,
+p.content,
+li.content,
+.section-content {
+  display: block;
+}
+.content-note {
+}
+p.content {
+  display: block;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+}
+@font-face {
+  font-family: Inconsolata;
+  src: url('/assets/fonts/Inconsolata-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Inconsolata;
+  src: url('/assets/fonts/Inconsolata-Regular.ttf');
+  font-weight: 400;
+}
+.dice-keys-font {
+  font-family: Inconsolata, monospace;
+  display: inline;
+  font-weight: 700;
+}
+.use-case {
+  padding-top: 0.75vw;
+  padding-bottom: 0.75vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 47vw;
+  margin-top: 1.75vh;
+  margin-bottom: 1vh;
+  border-radius: 1vw;
+  justify-content: start;
+  align-items: center;
+}
+figcaption {
+  justify-content: center;
+  caption-side: bottom;
+  text-align: center;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.3vh;
+  margin-bottom: 0vh;
+  width: 100%;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+}
+.use-case-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.3vh;
+  margin-bottom: 0vh;
+  width: 100%;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+}
+.section {
+  flex-direction: column;
+  justify-content: stretch;
+  justify-items: flex-start;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+}
+.section-heading {
+  display: block;
+  margin-top: 0.5rem;
+}
+.section-content {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 1vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 80vw;
+}
+
+.link-button {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: 16px;
+  display: inline-block;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #404ef3;
+  }
+}
+
+ul {
+  margin: 2vh 2vw;
+  li::before {
+    content: '→ ';
+  }
+}

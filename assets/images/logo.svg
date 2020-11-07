@@ -4,7 +4,7 @@ width="70.4mm" height="17.6mm" viewBox="0 0 70.4 17.6" style="background: rgba(0
 <style>
     @font-face {
       font-family: "Inconsolata";
-      src: url("../fonts/Inconsolata-Bold.ttf");
+      src: url("/assets/fonts/Inconsolata-Bold.ttf");
       font-weight: 700;
     }
 </style>

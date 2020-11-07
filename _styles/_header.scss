@@ -1,0 +1,14 @@
+.header {
+  background-color: rgba(16, 16, 16, 0.9);
+  z-index: 255;
+  padding: 12px 0;
+
+  .dicekeys-logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 32px;
+    }
+  }
+}

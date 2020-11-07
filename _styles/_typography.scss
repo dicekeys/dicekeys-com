@@ -1,0 +1,83 @@
+p,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+strong,
+em,
+label,
+button,
+small,
+figcaption,
+sup,
+.separator {
+  font-family: var(--font-body);
+  color: var(--color-white);
+}
+
+h1,
+.h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+h2,
+.h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.3rem;
+}
+
+h5,
+.h5 {
+  font-weight: 700;
+}
+
+h5,
+.h5,
+p,
+.p,
+li,
+figcaption {
+  font-size: 1.2rem;
+  line-height: 1.5;
+
+  &:not(:first-of-type):not(li) {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+}
+
+sup {
+  font-size: x-small;
+}
+a {
+  color: var(--color-lavendar);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+em {
+  font-style: italic;
+}

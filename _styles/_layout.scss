@@ -1,0 +1,12 @@
+.page-content {
+  max-width: $breakpoint-desktop;
+  margin: 0 auto;
+
+  &.--wide {
+    max-width: 95vw;
+  }
+}
+
+.page-section {
+  margin-bottom: 124px;
+}
