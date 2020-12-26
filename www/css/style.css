@@ -1,0 +1,62 @@
+:root {
+    background-color:#101010;
+    color: white;
+}
+
+img{
+    max-inline-size: 100%;
+}
+
+a {
+    color: rgba(216,216,255,1);
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    inset-block: 0;
+}
+
+#good-parts {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    column-gap: 1em;
+    margin: 1em;
+}
+
+#good-parts > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clearfix {
+    display: flow-root;
+}
+
+#demo-scan {
+    float: left;
+    height: 30em;
+}
+
+#sample-key {
+    block-size: 20em;
+}
+
+.profile {
+    inline-size:3.8em;
+    block-size:3.8em;
+    background-color: white;
+    border-radius:0.8em;
+}
+
+.social-media {
+    inline-size:2em;
+    block-size: 2em;
+}
+
+#product-image {
+    float:left;
+    block-size:13em;
+}

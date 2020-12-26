@@ -1,16 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<title>DiceKeys</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="favicon.svg">
-		<link rel="stylesheet" href="style.css">
-		<base target="_blamk">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<base target="_blank">
 	</head>
 	<body>
 		<header>
 			<img src="images/logo.svg" style="background-color: white;" alt="Dicekeys logo">
-			<h1>DiceKeys</h1>
 			<p>Security keys you create by rolling dice</p>
 		</header>
 		<aside>
@@ -19,20 +20,17 @@
 		<main>
 			<h1>Don't let your own security lock <em>you</em> out</h1>
 			<p><strong>DiceKeys</strong> are backup security keys that prevent lockouts and make it easier to adopt stronger online security.</p>
-			<ul>
+			<ul id="good-parts">
 				<li>
-					<!-- Under Construction -->
-					<img src="" alt="">
+					<img src="images/no-need-master-key.png" alt="">
 					<p>Use password managers without memorizing 'master' passwords</p>
 				</li>
 				<li>
-					<!-- Under Construction -->
-					<img src="" alt="">
+					<img src="images/clone-solokey.png" alt="">
 					<p>Create FIDO security keys you can replicate if broken or lost</p>
 				</li>
 				<li>
-					<!-- Under Construction -->
-					<img src="" alt="">
+					<img src="images/access-to-encrypted.png" alt="">
 					<p>Ensure ongoing access to the data in end-to-end encrypted apps</p>
 				</li>
 			</ul>
@@ -45,9 +43,9 @@
 			</section>
 			<section>
 				<h2>Reliable and trustworthy by design</h2>
-				<section>
+				<section class="clearfix">
 					<h3>Readable by your devices and your own eyes</h3>
-					<video src="videos/DemoScanOnS20.mp4" autoplay="true" loop="true" muted="true" playsinline="true"></video>
+					<video src="videos/DemoScanOnS20.mp4" id="demo-scan" autoplay="true" loop="true" muted="true" playsinline="true"></video>
 					<p>DiceKeys can be read by most any phone, tablet, or computer. Or, you can use your own eyes to read each face by its:</p>
 					<ul>
 						<li><em>letter</em>, which identifies the die</li>
@@ -55,7 +53,7 @@
 						<li><em>orientation (or rotation)</em> of the face relative to the box</li>
 					</ul>
 					<figure>
-						<img style="width: 30vw; height: 30vw; object-fit: contain;" src="images/sample-key.svg" alt="">
+						<embed src="images/sample-key.svg" id="sample-key" type="image/svg+xml">
 						<figcaption>The lines and dots are error-correction codes. Each line contains a redundant encoding of the letter and digit on the face of the die. Our algorithms use them to orient and double check the letter and digit.</figcaption>
 					</figure>
 				</section>
@@ -97,50 +95,53 @@
 				<h2>Team</h2>
 				<article>
 					<!-- Under Construction -->
-					<h3>Stuart Schechter</h3>
+					<embed src="images/team/S5.svg" type="image/svg+xml"><img src="images/team/stuart.png" class="profile" alt="">
+					<h3><a href="mailto:stuart@dicekeys.com">Stuart Schechter</a> <a href="https://www.linkedin.com/in/stuart-schechter/"><img src="images/social/linkedin.png" class="social-media" alt=""></a> <a href="https://twitter.com/uppajung/"><img src="images/social/twitter.svg" class="social-media" alt=""></a></h3>
 					<p>Stuart's career as an inventor and researcher in the field of usable security research spanned his years at Microsoft Research, MIT Lincoln Laboratory, and his PhD at Harvard University. He currently teaches Usable Privacy and Security for the University of California at Berkeley's Master's Program in Cybersecurity.</p>
 				</article>
 				<section>
 					<h3>Advisors</h3>
 					<article>
 						<!-- Under Construction -->
-						<h4>Joseph Bonneau</h4>
+						<embed src="images/team/J8.svg" type="image/svg+xml"><img src="images/team/bonneau.png" class="profile" alt="">
+						<h4><a href="https://jbonneau.com/">Joseph Bonneau</a> <a href="https://www.linkedin.com/in/joseph-bonneau-15419920/"><img src="images/social/linkedin.png" class="social-media" alt=""></a> <a href="https://twitter.com/josephbonneau"><img src="images/social/twitter.svg" class="social-media" alt=""></a></h4>
 						<p>Joseph Bonneau is an Assistant Professor at NYU and was formerly affiliated with Stanford, Princeton, Cambridge (PhD), the Electronic Frontier Foundation, Google, Yahoo, and Cryptography Research. He is known for groundbreaking work on authentication, including analysis of 70m passwords at Yahoo, and for his security analyses of cryptocurrencies. Of particular relevance for DiceKeys, he created the word lists for EFF's DiceWare, a technology to help users to create phrase-based passwords from standard dice.</p>
 					</article>
 					<article>
 						<!-- Under Construction -->
-						<h4>Bruce Schneier</h4>
+						<embed src="images/team/B5.svg" type="image/svg+xml">
+						<h4><a href="https://www.schneier.com/">Bruce Schneier</a> <a href="https://twitter.com/schneierblog"><img src="images/social/twitter.svg" class="social-media" alt=""></a></h4>
 						<p>Bruce Schneier is an internationally renowned security technologist, called a "security guru" by The Economist. He is the author of over one dozen books--including his latest, Click Here to Kill Everybody--as well as hundreds of articles, essays, and academic papers. His influential newsletter "Crypto-Gram" and his blog "Schneier on Security" are read by over 250,000 people. He has testified before Congress, is a frequent guest on television and radio, has served on several government committees, and is regularly quoted in the press. Schneier is a fellow at the Berkman Klein Center for Internet & Society at Harvard University; a Lecturer in Public Policy at the Harvard Kennedy School; a board member of the Electronic Frontier Foundation, AccessNow, and the Tor Project; and an Advisory Board Member of the Electronic Privacy Information Center and VerifiedVoting.org.</p>
 					</article>
 				</section>
 			</section>
-			<section>
+			<section class="clearfix">
 				<h2>Technical specs</h2>
-				<img src="images/from-left.png" alt="">
+				<img src="images/from-left.png" id="product-image" alt="">
 				<section>
 					<h3>Security strength</h3>
 					<table>
 						<tbody>
 							<tr>
 								<td>25 unique dice (letters) assigned to 25 positions</td>
-								<td>25!</td>
+								<td title="25 factorial">25!</td>
 							</tr>
 							<tr>
 								<td>6 possible faces (digits) exposed by each die</td>
-								<td>x 6<sup>25</sup></td>
+								<td title="and multiply, 6 to the 25">* 6<sup>25</sup></td>
 							</tr>
 							<tr>
 								<td>4 possible orientations of each exposed face</td>
-								<td>x 4<sup>25</sup></td>
+								<td title="and multiply, 4 to the 25">* 4<sup>25</sup></td>
 							</tr>
 							<tr>
 								<td>4 possible orientations of box reduced to one<sup>1)</sup></td>
-								<td>/ 4</td>
+								<td title="and divide, 4">/ 4</td>
 							</tr>
 						</tbody>
 						<tfoot>
 							<tr>
-								<td colspan="2">=124,127,134,662,179,891,202,329,100,571,859,806,502,566,406,865,813,504,000,000<br>=2<sup>196 + ε</sup><br>&gt;196 bits</td>
+								<td colspan="2" title="total cases"><span style="font-size: small;">=124,127,134,662,179,891,202,329,100,571,859,806,502,566,406,865,813,504,000,000</span><br><span>=2<sup>196 + ε</sup></span><br><span>&gt;196 bits</span></td>
 							</tr>
 						</tfoot>
 					</table>
@@ -149,9 +150,9 @@
 				<section>
 					<h3>Physical Properties (edition 2020.0)</h3>
 					<ul>
-						<li>Products formation: 25 dice, a 3-part box, and a bag</li>
-						<li>Die size: 12mm</li>
-						<li>Total weight: (Approximately) 103g</li>
+						<li>products formation: 25 dice, a 3-part box, and a bag</li>
+						<li>die size: 12mm</li>
+						<li>total weight: (Approximately) 103g</li>
 					</ul>
 				</section>
 			</section>
