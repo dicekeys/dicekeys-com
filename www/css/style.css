@@ -1,10 +1,20 @@
 :root {
     background-color:#101010;
     color: white;
+    padding-inline: 15%;
+    font-size: 20px;
 }
 
-img{
-    max-inline-size: 100%;
+@font-face {
+    font-family: Inconsolata;
+    src: url("./fonts/Inconsolata-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Inconsolata;
+    src: url("./fonts/Inconsolata-Regular.ttf");
+    font-weight: normal;
 }
 
 a {
@@ -12,51 +22,176 @@ a {
     text-decoration: none;
 }
 
+section, article, p, h1, h2, h3, h4, h5, figure {
+    margin-inline: 10px;
+}
+
 header {
+    display: flex;
     position: sticky;
     inset-block: 0;
+    justify-content: start;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#logo {
+    inline-size: 20%;
+    margin: 1em;
+}
+
+aside {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    inline-size: 25em;
+    z-index: -1;
+}
+
+aside > img {
+    inline-size: 100%;
+}
+
+figure {
+    display: grid;
+    justify-items: center;
+}
+
+figure img {
+    inline-size: 100%;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-block: 1em;
+}
+
+#slogan {
+    background-color:  rgba(80, 80, 80);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    text-align: center;
 }
 
 #good-parts {
     display: flex;
-    padding: 0;
     justify-content: space-evenly;
-    column-gap: 1em;
-    margin: 1em;
+    align-items: center;
+    padding: 0;
 }
 
 #good-parts > * {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    padding: 1em;
+}
+
+.good-parts-card {
+    display: grid;
+    justify-items: center;
+    border-radius: 1em;
+    padding: 1em;
+    background-color:  rgba(80, 80, 80);
+}
+
+#good-parts img {
+    inline-size: 100%;
+    max-inline-size: max-content;
+}
+
+#good-parts p {
+    word-break: break-all;
 }
 
 .clearfix {
     display: flow-root;
 }
 
-#demo-scan {
+.left-float {
     float: left;
-    height: 30em;
 }
 
 #sample-key {
-    block-size: 20em;
+    inline-size: 20em;
+}
+
+.profile-column {
+    column-count: 2;
+    break-inside: avoid;
+}
+
+.profile-column > h2 {
+    column-span: all;
+}
+
+.profile-column > article {
+    break-inside: avoid;
 }
 
 .profile {
-    inline-size:3.8em;
-    block-size:3.8em;
+    inline-size:3em;
+    block-size:3em;
     background-color: white;
-    border-radius:0.8em;
+    border-radius:0.5em;
 }
 
 .social-media {
-    inline-size:2em;
-    block-size: 2em;
+    block-size: 1em;
 }
 
-#product-image {
-    float:left;
-    block-size:13em;
+tr > :last-of-type {
+    text-align: end;
+}
+
+sup {
+    font-size: 0.25em;
+}
+
+@media (max-width:961px)  {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    :root {
+        padding-inline: 1em;
+    }
+
+    aside {
+        inline-size: 100%;
+    }
+
+    #sample-key {
+        inline-size: 70%;
+    }
+
+    iframe {
+        inline-size: 100%;
+    }
+}
+
+@media (max-width:641px)  {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    #good-parts {
+        justify-content: start;
+        column-gap: 0;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    #sample-key {
+        inline-size: 100%;
+    }
+
+    #good-parts > * {
+        scroll-snap-align: start;
+        flex: 0 0 auto;
+        inline-size: calc(100% - 2em);
+    }
+
+    video {
+        inline-size: 100%;
+    }
+
+    .left-float {
+        float:unset;
+    }
+
+    .profile-column {
+        column-count: 1;
+    }
 }
