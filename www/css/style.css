@@ -54,6 +54,7 @@ aside > img {
 figure {
     display: grid;
     justify-items: center;
+    max-inline-size: 20em;
 }
 
 figure img {
