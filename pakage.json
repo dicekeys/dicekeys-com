@@ -1,0 +1,21 @@
+{
+    "name": "dicekeys-com",
+    "version": "1.0.0",
+    "description": "The dicekeys.com website",
+    "main": "index.html",
+    "scripts": {
+        "upload-staging": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://staging.dicekeys.com/",
+        "upload-preview": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://preview.dicekeys.com/",
+        "upload-public": "gsutil -m -h Cache-Control:\"Cache-Control:private, max-age=0, no-transform\" cp -r www/* gs://dicekeys.com/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dicekeys/dicekeys-com.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dicekeys/dicekeys-com/issues"
+    },
+    "homepage": "https://github.com/dicekeys/dicekeys-com#readme"
+}
