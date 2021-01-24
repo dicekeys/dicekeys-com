@@ -116,7 +116,6 @@ main {
 
 .profile-column {
     column-count: 2;
-    break-inside: avoid;
 }
 
 .profile-column > h2 {
@@ -125,11 +124,13 @@ main {
 
 .profile-column > article {
     break-inside: avoid;
+    /* as below, it was added because of the box overflow */
+    border: 1px solid transparent;
 }
 
 .profile {
-    inline-size:3em;
-    block-size:3em;
+    inline-size:2.6em;
+    block-size:2.6em;
     background-color: white;
     border-radius:0.5em;
 }
