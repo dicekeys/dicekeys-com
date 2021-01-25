@@ -1,0 +1,199 @@
+:root {
+    background-color:#101010;
+    color: white;
+    padding-inline: 15%;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: Inconsolata;
+    src: url("./fonts/Inconsolata-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Inconsolata;
+    src: url("./fonts/Inconsolata-Regular.ttf");
+    font-weight: normal;
+}
+
+a {
+    color: rgba(216,216,255,1);
+    text-decoration: none;
+}
+
+section {
+    margin-inline: 1em;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    inset-block: 0;
+    justify-content: start;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#logo {
+    inline-size: 20%;
+    margin: 1em;
+}
+
+aside {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    inline-size: 25em;
+    z-index: -1;
+}
+
+aside > img {
+    inline-size: 100%;
+}
+
+figure {
+    display: grid;
+    justify-items: center;
+    max-inline-size: 20em;
+}
+
+figure img {
+    inline-size: 100%;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-block: 1em;
+}
+
+#slogan {
+    background-color:  rgba(80, 80, 80);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#good-parts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+
+#good-parts > * {
+    display: block;
+    padding: 1em;
+}
+
+.good-parts-card {
+    display: grid;
+    justify-items: center;
+    border-radius: 1em;
+    padding: 1em;
+    background-color:  rgba(80, 80, 80);
+}
+
+#good-parts img {
+    inline-size: 100%;
+    max-inline-size: max-content;
+}
+
+#good-parts p {
+    word-break: break-all;
+}
+
+.clearfix {
+    display: flow-root;
+}
+
+.left-float {
+    float: left;
+}
+
+#sample-key {
+    inline-size: 20em;
+}
+
+.profile-column {
+    column-count: 2;
+}
+
+.profile-column > h2 {
+    column-span: all;
+}
+
+.profile-column > article {
+    break-inside: avoid;
+    /* as below, it was added because of the box overflow */
+    border: 1px solid transparent;
+}
+
+.profile {
+    inline-size:2.6em;
+    block-size:2.6em;
+    background-color: white;
+    border-radius:0.5em;
+}
+
+.social-media {
+    block-size: 1em;
+}
+
+tr > :last-of-type {
+    text-align: end;
+}
+
+sup {
+    font-size: 0.25em;
+}
+
+@media (max-width:961px)  {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    :root {
+        padding-inline: 1em;
+    }
+
+    aside {
+        inline-size: 100%;
+    }
+
+    #sample-key {
+        inline-size: 70%;
+    }
+
+    iframe {
+        inline-size: 100%;
+    }
+}
+
+@media (max-width:641px)  {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    #good-parts {
+        justify-content: start;
+        column-gap: 0;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    #sample-key {
+        inline-size: 100%;
+    }
+
+    #good-parts > * {
+        scroll-snap-align: start;
+        flex: 0 0 auto;
+        inline-size: calc(100% - 2em);
+    }
+
+    video {
+        inline-size: 100%;
+    }
+
+    .left-float {
+        float:unset;
+    }
+
+    .profile-column {
+        column-count: 1;
+    }
+}
